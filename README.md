@@ -14,4 +14,5 @@ Puis toujours sous le dossier frontend, lancer la commande "npm start".
 Une fois le lancement effectué avec succès, la page web s'ouvre automatiquement (cela peut prendre un certain temps).
 Si ce n'est pas le cas, ouvrir une page web et taper dans la barre de recherche "http://localhost:8081".
 Laisser la fenêtre de l'invite de commande ouverte.
-# NB : Lors du développement, la base de données a été créée sur phpMyAdmin via WampServer64. Pour utiliser WampServer64, MySQL ne doit PAS être installé sur l'ordinateur (sinon WampServer sera inutilisable).
+# NB :
+Lors du développement, la base de données a été créée sur phpMyAdmin via WampServer64. Pour utiliser WampServer64, MySQL ne doit PAS être installé sur l'ordinateur (sinon WampServer sera inutilisable).
