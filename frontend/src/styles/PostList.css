@@ -1,0 +1,135 @@
+/*---------- Document de styles CSS ----------*/
+
+/*---------- Variables ----------*/
+:root{
+    --primary: #FD2D01;
+    --secondary: #FFD7D7;
+    --tertiary: #4E5166;
+  }
+/*------- Styles (selon zone) -------*/
+.block-postList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.groupo-red{
+    width: 10%;
+}
+.link{
+    width: 100%;
+    text-decoration: none;
+}
+.block-postList-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+}
+.logo-red{
+    width: 4%;
+    height: 4%;
+    align-self: center;
+    margin-right: 0.7em;
+}
+.postList-item{
+    width: 70%;
+    height: 8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.8em 0;
+    padding: 0.9em;
+    border-radius: 2em;
+    border: solid 0.1em white;
+    color: var(--secondary);
+    background-color: var(--tertiary);
+    text-decoration: none;
+    box-shadow: 0.4em 0.4em 0.4em var(--primary);
+}
+.postList-item:hover{
+    box-shadow: 0.8em 0.8em 0.8em var(--primary);
+}
+.block-infos{
+    margin-right: 1em;
+    padding: 0.5em;
+    border: solid 0.1em var(--secondary);
+    border-radius: 2em;
+}
+.block-infos p{
+    margin: 0;
+}
+.post-title{
+    color: var(--secondary);
+    margin-top: 0.1em;
+}
+.postList-img{
+    width: 15%;
+    border: solid 0.1em var(--secondary);
+    border-radius: 50%;
+    margin-right: 1em;
+}
+.desc-postList{
+    width: 40%;
+    word-wrap: break-word;
+}
+/* ------------------------- Responsive ------------------------- */
+/* -------------------- I-phone5 à I-phone8 --------------------- */
+@media all and (min-width: 320px) and (max-width: 567px){
+    .groupo-red{
+        width: 25%;
+    }
+    .block-postList-item{
+        width: 100%;
+    }
+    .logo-red{
+        width: 7%;
+    }
+    .postList-item{
+        width: 75%;
+        height: 20em;
+        flex-direction: column;
+    }
+    .postList-img{
+        width: 20%;
+        margin: 0.5em;
+        height: 3em;
+    }
+    .block-infos{
+        width: 90%;
+        margin-right: 0;
+        font-size: 0.9em;
+    }
+    .desc-postList{
+        width: 90%;
+    }
+}
+/* --------------- I-phone5 à I-phone8 (paysage)---------------- */
+@media all and (min-width: 568px) and (max-width: 767px){
+    .postList-item{
+        width: 85%;
+    }
+    .postList-img{
+        width: 10%;
+        margin: 0.5em;
+        height: 3em;
+        align-self: center;
+    }
+    .block-infos{
+        width: 35%;
+        font-size: 0.8em;
+    }
+}
+/* -------------------------- I-pad --------------------------- */
+@media all and (min-width: 768px) and (max-width: 1023px){
+    .groupo-red{
+        width: 20%;
+    }
+    .postList-item{
+        width: 88%;
+    }
+    .logo-red{
+        width: 3%;
+        height: 3%;
+    }
+}

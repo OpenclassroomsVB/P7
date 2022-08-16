@@ -1,0 +1,195 @@
+/*---------- Document de styles CSS ----------*/
+
+/*---------- Variables ----------*/
+:root{
+    --primary: #FD2D01;
+    --secondary: #FFD7D7;
+    --tertiary: #4E5166;
+}
+/*------- Styles (selon zone) -------*/
+.block-posts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block-author-post{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8em;
+}
+.form-update-post{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*---------- auteur ----------*/
+.block-update-post{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
+    color: var(--secondary);
+    background-color: var(--tertiary);
+    box-shadow: 0.4em 0.4em 0.4em var(--primary);
+    border-radius: 2em;
+    border: solid 0.1em white;
+}
+.current-image{
+    width: 10%;
+    margin: 0.5em;
+    margin-bottom: -0.5em;
+    border: solid 0.1em var(--secondary);
+    border-radius: 50%;
+}
+.label-update-post {
+    width: 60%;    
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+.input-update-post{
+    width: 60%;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    padding: 0.2em;
+    border: solid 0.1em var(--secondary);
+}
+.block-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn-delete, .btn-update{
+    font-size: 1.3em;
+    border-radius: 1em;
+    margin: 0.5em 0;
+    padding: 0.2em 0.7em;
+    border: solid 0.1em var(--secondary);
+    box-shadow: 0.2em 0.2em 0.2em var(--tertiary);
+    color: var(--secondary);
+    background-color: var(--tertiary);
+}
+.btn-delete:hover, .btn-update:hover{
+    border: solid 0.1em var(--tertiary);
+    color: var(--tertiary);
+    background-color: var(--secondary);
+}
+.author-like-author{
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
+}
+/*---------- Non auteur ----------*/
+.block-not-author-post{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
+    font-size: 0.8em;
+    color: var(--secondary);
+    background-color: var(--tertiary);
+    box-shadow: 0.4em 0.4em 0.4em var(--primary);
+    border-radius: 2em;
+    border: solid 0.1em white;
+}
+.content-not-author-post{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+input:focus{
+    border-color: var(--primary);
+    outline: none;
+}
+.title-img{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5em;
+}
+.title-post{
+    font-size: 2em;
+}
+.post-img{
+    width: 70%;
+    border: solid 0.2em var(--secondary);
+    border-radius: 2em;
+    margin-top: 1em;
+}
+.description{
+    width: 60%;
+    word-wrap: break-word;
+    padding: 0.5em;
+    margin: 0;
+    font-size: 2em;
+}
+.author-like-not-author{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.back-post-list{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* ------------------------- Responsive ------------------------- */
+/* -------------------- I-phone5 à I-phone8 --------------------- */
+@media all and (min-width: 320px) and (max-width: 567px){
+    .content-not-author-post{
+        flex-direction: column;
+        align-items: center;
+    }
+    .title-img{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    .title-post{
+        font-size: 1.5em;
+    }
+    .description{
+        width: 90%;
+        font-size: 1em;
+    }
+    .block-update-post{
+        width: 85%;
+        border-radius: 1.5em;
+    }
+    .label-update-post {
+        width: 95%;    
+        font-size: 1em;
+        margin: 0.5em 0;
+    }
+    .input-update-post{
+        width: 90%;
+        font-size: 1em;
+    }
+    .author-like-author{
+        width: 100%;
+        font-size: 0.8em;
+    }
+    .btn-delete, .btn-update{
+        font-size: 1em;
+        border-radius: 1em;
+    }
+    .author-p{
+        font-size: 1em;
+    }
+}
+/* -------------------------- I-pad --------------------------- */
+@media all and (min-width: 768px) and (max-width: 1023px){
+    .block-not-author-post{
+        margin-top: 8em;
+    }
+    .block-author-post{
+        margin-top: 5em;
+    }
+}

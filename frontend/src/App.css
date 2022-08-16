@@ -1,0 +1,199 @@
+/*---------- Document de styles CSS ----------*/
+
+/*---------- Variables ----------*/
+:root{
+  --primary: #FD2D01;
+  --secondary: #FFD7D7;
+  --tertiary: #4E5166;
+}
+/*---------- Animations ----------*/
+@keyframes logo-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes apparaitre {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*------- Styles principaux -------*/
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+h1{
+  color: var(--tertiary);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h2{
+  font-size: 1em;
+  text-transform: uppercase;
+}
+/*------- Styles (selon zone) -------*/
+.block-app{  
+  width: 100%;    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block {
+  width: 100%;
+  margin-top: 3em;
+}
+.block-logo-h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.block-logo-h1 p {
+  margin-top: 1.5em;
+  padding: 1.1em;
+  border-bottom: solid 0.13em var(--primary);
+  font-weight: bold;
+}
+.block-logo-h1 p, h1 {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--tertiary);
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  animation: apparaitre 2000ms forwards;
+}
+.logo-rotate{
+  width: 20%;
+  object-fit: cover;
+  align-self: center;
+  border-radius: 50%;
+  border: solid 0.17em var(--primary);
+  animation: logo-rotation 2000ms forwards;  
+}
+.not-connected-nav-bar, .block-form{
+  width: 30%;
+}
+.not-connected-nav-bar, .connected-nav-bar{
+  width: 100%;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 1.5em;
+  background-color: var(--tertiary);
+}
+.logo-white {
+  width: 2.5em;
+}
+.nav-link{
+  width: 100%;
+  margin: 0;  
+  color: var(--secondary);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+.nav-link:hover{
+  text-decoration-line: underline;
+}
+.back-post-list{
+  margin-top: 1em;
+  padding: 0.5em;
+  color: var(--primary);
+  font-weight: bold;
+  border: solid 0.2em var(--primary);
+  border-radius: 2em;
+  text-decoration: none;
+}
+/* ------------------------- Responsive ------------------------- */
+/* -------------------- I-phone5 à I-phone8 --------------------- */
+@media all and (min-width: 320px) and (max-width: 567px){
+  h1{
+    font-size: 1em;
+  }
+  /*h2{
+    font-size: 1.2em;
+    margin-top: 0.5em
+  }*/
+  .connected-nav-bar{
+    height: 7.5em;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+  }
+  .not-connected-nav-bar{
+    font-size: 1em;
+  }
+  .logo-white {
+    width: 1.5em;
+  }
+  .nav-link{
+    margin: 0.3em;  
+  }
+  .block-logo-h1 {
+    font-size: 0.7em;
+  }
+  .logo-rotate{
+    width: 60%;
+    margin: 3em;
+  }
+  .block-logo-h1 p{
+    margin-top: 3em;
+  }
+  .block-form{
+    width: 80%;
+  }
+  .back-post-list{
+    margin-top: 0.5em;
+    padding: 0.4em;
+  }
+}
+/* --------------- I-phone5 à I-phone8 (paysage)---------------- */
+@media all and (min-width: 568px) and (max-width: 767px){
+  .connected-nav-bar{
+    font-size: 1em;
+  }
+  .block-logo-h1 p{
+    font-size: 1em;
+  }
+  .logo-rotate{ 
+    width: 15%;
+  }
+  .block-logo-h1 p, h1 {
+    width: 47%;
+    font-size: 1em;
+  }
+  .block-form{
+    width: 85%;
+  }
+}
+/* -------------------------- I-pad --------------------------- */
+@media all and (min-width: 768px) and (max-width: 1023px){
+  .logo-rotate{ 
+    width: 50%;
+    margin-top: 3em;
+  }
+  .block-logo-h1 p, h1 {
+    width: 60%;
+    font-size: 2.5em;
+  }
+  .block-logo-h1 p{
+    margin-top: 3em;
+  }
+  .block-form{
+    width: 40%;
+    margin-top: 10em;
+  }
+  .connected-nav-bar{
+    font-size: 1.3em;
+  }
+}

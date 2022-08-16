@@ -1,0 +1,54 @@
+/*---------- Document de styles CSS ----------*/
+
+/*------- Styles (selon zone) -------*/
+.block-profile{    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.border-block{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    border-radius: 3em;
+    border: solid 0.3em var(--primary);
+}
+.block-item-profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em;
+    padding: 0.7em;
+    font-size: 1.5em;
+    border: solid 0.1em var(--secondary);
+    border-radius: 2em;
+    color: var(--secondary);
+    background-color: var(--tertiary);
+    text-decoration: none;
+}
+/* ------------------------- Responsive ------------------------- */
+/* -------------------- I-phone5 à I-phone8 --------------------- */
+@media all and (min-width: 320px) and (max-width: 567px){
+    .border-block{
+        width: 90%;
+    }
+    .block-item-profile{
+        font-size: 1em;
+    }
+}
+/* --------------- I-phone5 à I-phone8 (paysage)---------------- */
+@media all and (min-width: 568px) and (max-width: 767px){
+    .border-block{
+        font-size: 0.5em;
+    }
+}
+/* -------------------------- I-pad --------------------------- */
+@media all and (min-width: 768px) and (max-width: 1023px){
+    .border-block{
+        width: 65%;
+        margin: 5em;
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,41 @@
+/*---------- Document de styles CSS ----------*/
+
+/*------- Styles (selon zone) -------*/
+.block-like{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    margin: auto;
+}
+.number-like{
+    margin-left: 0.5em;
+    margin-right: 2.5em;
+}
+.author-like-not-author{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.author-not{
+    width: 70%;
+    margin-left: 1.5em;
+    display: flex;
+}
+.author-p{
+    font-size: 1.3em;
+    margin-left: 1.5em;
+}
+
+/* ------------------------- Responsive ------------------------- */
+/* -------------------- I-phone5 à I-phone8 --------------------- */
+@media all and (min-width: 320px) and (max-width: 567px){
+    .author-not{
+        margin-left: 1em;
+    }
+    .author-p{
+        margin-left: 1em;
+    }
+}

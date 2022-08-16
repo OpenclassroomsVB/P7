@@ -1,0 +1,98 @@
+/*---------- Document de styles CSS ----------*/
+
+/*---------- Variables ----------*/
+:root{
+    --primary: #FD2D01;
+    --secondary: #FFD7D7;
+    --tertiary: #4E5166;
+  }
+/*------- Styles (selon zone) -------*/
+.block-addpost{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block-item-addpost{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 2em;
+    border: solid 0.1em white;
+    color: var(--secondary);
+    background-color: var(--tertiary);
+    box-shadow: 0.4em 0.4em 0.4em var(--primary);
+}
+#imageUrl{
+    margin-left: 1em;
+}
+.label-addpost{ 
+    width: 75%;       
+    font-size: 1em;
+    margin: 0.5em 0;
+    display: flex;
+    align-items: center;
+}
+.textarea-addpost{
+    width: 70%;
+    height: 2em;
+    font-size: 1.5em;
+    border-radius: 2em;
+    margin: 1em;
+    border: 0.1em solid var(--tertiary);
+}
+.textarea-addpost:focus{
+    border-color: var(--primary);
+    outline: none;
+}
+.btn-addpost{
+    font-size: 1.3em;
+    border-radius: 1em;
+    margin: 0.5em 0;
+    padding: 0.2em 0.7em;
+    border: solid 0.1em var(--secondary);
+    box-shadow: 0.2em 0.2em 0.2em var(--tertiary);
+    color: var(--secondary);
+    background-color: var(--tertiary);
+}
+.btn-addpost:hover{
+    border: solid 0.1em var(--tertiary);
+    color: var(--tertiary);
+    background-color: var(--secondary);
+}
+.posts-msg{
+    color: var(--tertiary);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* ------------------------- Responsive ------------------------- */
+/* -------------------- I-phone5 à I-phone8 --------------------- */
+@media all and (min-width: 320px) and (max-width: 567px){
+    .block-item-addpost{
+        margin: 0.5em 0;
+        padding: 0.5em;
+    }
+    .label-addpost{ 
+        width: 100%;       
+        font-size: 0.7em;
+    }
+    #imageUrl{
+        margin-left: 0.5em;
+        font-size: 0.9em;
+        margin-top: 1em;
+    }
+    .btn-addpost{
+        font-size: 1em;
+    }
+}
+/* -------------------------- I-pad --------------------------- */
+@media all and (min-width: 768px) and (max-width: 1023px){
+    .block-item-addpost{
+        margin: 5em;
+    }
+}
